@@ -1,7 +1,11 @@
 SampleApp::Application.routes.draw do
 
   root :to => 'static_pages#home'
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> f8944002f2428c908ffc18982de222bd3a80fe33
   match '/about',   :to => 'static_pages#about'
   match '/contact', :to => 'static_pages#contact'
   match '/projects', :to => 'static_pages#projects'
