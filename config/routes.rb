@@ -1,6 +1,13 @@
 SampleApp::Application.routes.draw do
+  get "users/new"
+
   root :to => 'static_pages#home'
 
+<<<<<<< HEAD
+=======
+  match '/signup', :to => 'users#new'
+  match '/help',    :to => 'static_pages#help'
+>>>>>>> 656d0a34613a0cd1abb8231b6f8e320b43bccb50
   match '/about',   :to => 'static_pages#about'
   match '/contact', :to => 'static_pages#contact'
   match '/projects', :to => 'static_pages#projects'
