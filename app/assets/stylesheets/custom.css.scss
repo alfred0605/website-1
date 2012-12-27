@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  background-color: #BDEDFF;
   padding-top: 60px;
 }
 
@@ -25,6 +26,35 @@ textarea {
   }
 }
 
+.center.navbar .nav,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
+/* overlaying picture */
+
+.image {
+    text-align: center;
+    position: relative;
+    float: auto; /* optional */
+    bottom: 15px;
+}
+
+.box {
+    width: 810px; /* full is 850 */
+    height: 285px; /* full is 300 */
+    position:absolute;
+    top:15px; /* full is 0 */
+    left:229px; /* full is 209 */
+    background: rgba(248, 248, 248, 0.5);
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,6 +66,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: #000000;
 }
 
 h2 {
@@ -55,11 +86,10 @@ p {
 /* header */
 
 #logo {
-  float: left;
+  float: center;
   margin-right: 10px;
   font-size: 1.7em;
   color: #00BFFF;
-  text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -70,12 +100,18 @@ p {
   }
 }
 
+#nav {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 25px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #56A5EC;
   color: #999;
   a {
 	color: #555;
@@ -85,6 +121,7 @@ footer {
   }
   small {
     float: left;
+    color: #5CB3FF;
   }
   ul {
     float: right;

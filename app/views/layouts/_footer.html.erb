@@ -1,11 +1,21 @@
+<header class="navbar navbar-inverse center">
+  <div class="navbar-inner">
+    <div class="container">
+      <nav>
+        <ul class="nav">
+          <li><%= link_to image_tag("http://www.backgroundsy.com/file/large/home-icon.jpg", :width => 70, :height => 60), root_path, :id => "nav" %></li>
+          <li><%= link_to image_tag("http://png-1.findicons.com/files/icons/552/aqua_candy_revolution/128/get_info.png", :width => 55), about_path, :id => "nav" %></li>
+          <li><%= link_to image_tag("http://www.hcmiu.edu.vn/Portals/1/icons/publications-icon.png", :width => 55), projects_path, :id => "nav" %></li>
+          <li><%= link_to image_tag("http://icons.iconarchive.com/icons/ampeross/qetto/256/library-music-icon.png", :width => 50, :height => 50), music_path, :id => "nav" %></li>
+          <li><%= link_to image_tag("http://www.windowsphone8s.com/wp-content/news/camera_20icon.1.jpg", :width => 50, :height => 50), photography_path, :id => "nav" %></li>
+          <li><%= link_to "Contact", contact_path, :id => "nav" %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 <footer class="footer">
   <small>
-    Last updated: 12/25/12
+    Last updated: 12/27/12
   </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-    </ul>
-  </nav>
 </footer>
