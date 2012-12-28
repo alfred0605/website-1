@@ -56,14 +56,14 @@ textarea {
     position:absolute;
     top:15px; /* full is 0 */
     left:65px; /* full is 209 */
-    background: rgba(248, 248, 248, 0.5);
+    background: rgba(104, 159, 235, 0.3);
 }
 
 .textbox {
     top:10px; /* full is 0 */
     left:65px; /* full is 209 */
     right: px;
-    background: rgba(248, 248, 248, 0.5);
+    background: rgba(248, 248, 248, 0.4);
 }
 
 /* typography */
@@ -91,7 +91,7 @@ h2 {
   margin-right: 45px;
   text-align: left;
   font-weight: 100;
-  color: #1250A6;
+  color: #301BB7;
 }
 
 h3 {
@@ -110,7 +110,7 @@ h4 {
   text-align: left;
   margin-left: 85px;
   margin-right: 85px;
-  color: #015F84;
+  color: #11309C;
   font-weight: 100;
 }
 
@@ -140,6 +140,10 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+  opacity: 0.68;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 /* footer */
