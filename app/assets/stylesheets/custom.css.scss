@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #BDEDFF;
+  background-color: #1D4884;
   padding-top: 60px;
 }
 
@@ -59,6 +59,13 @@ textarea {
     background: rgba(248, 248, 248, 0.5);
 }
 
+.textbox {
+    top:10px; /* full is 0 */
+    left:65px; /* full is 209 */
+    right: px;
+    background: rgba(248, 248, 248, 0.5);
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,7 +100,7 @@ h3 {
   text-align: left;
   margin-left: 65px;
   margin-right: 65px;
-  color: #0081B4;
+  color: #FFFFFFF; /*#0081B4;*/
   font-weight: 200;
 }
 
