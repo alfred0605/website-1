@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-family: "Myriad Pro", Calibri, sans-serif;
   font-size: 3em;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   margin-bottom: 30px;
   text-align: right;
   margin-right: 60px;
@@ -142,7 +142,7 @@ p {
 	width: 50%;
   &:hover {
     opacity: 0.6;
-    margin-top: 1px;
+    margin-top: 1.5px;
   }
 }
 
