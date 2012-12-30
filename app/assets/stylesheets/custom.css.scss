@@ -167,6 +167,16 @@ h6 {
   font-weight: 100;
 }
 
+a {
+  font-family: "Myriad Pro", Calibri, sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #00475C;
+  &:hover {
+    color: #8EE5FF;
+  }
+}
+
 section#gototop {
   font-family: "Myriad Pro", Calibri, sans-serif;
   font-size: 19px;
