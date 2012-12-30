@@ -66,13 +66,22 @@ textarea {
 }
 
 .textbox {
-    top:10px; /* full is 0 */
     left:65px; /* full is 209 */
-    right: px;
     background: rgba(248, 248, 248, 0.4);
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
+    font-family: "Myriad Pro", Calibri, sans-serif;
+    a {
+      margin-top: -100px;
+      margin-right: 10px;
+      margin-left: 10px;
+      color: #00475C;
+      &:hover {
+        color: #8EE5FF;
+      }
+}
+
 }
 
 /* typography */
@@ -102,7 +111,7 @@ h2 {
   letter-spacing: 1px;
   font-size: 28px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-left: 45px;
   margin-right: 45px;
   text-align: left;
@@ -117,7 +126,7 @@ h3 {
   margin-left: 65px;
   margin-right: 65px;
   margin-top: 12px;
-  margin-bottom: -10px;
+  margin-bottom: -3px;
   color: #1D489C;
   font-weight: 200;
   line-height: 30px;
@@ -167,21 +176,11 @@ h6 {
   font-weight: 100;
 }
 
-a {
-  font-family: "Myriad Pro", Calibri, sans-serif;
-  margin-right: 10px;
-  margin-left: 10px;
-  color: #00475C;
-  &:hover {
-    color: #8EE5FF;
-  }
-}
-
 section#gototop {
   font-family: "Myriad Pro", Calibri, sans-serif;
   font-size: 19px;
   text-align: right;
-  margin-top: -30px;
+  margin-top: -50px;
   margin-left: 55px;
   margin-right: 55px;
   color: #0B5CA2;
