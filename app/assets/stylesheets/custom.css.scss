@@ -80,8 +80,38 @@ textarea {
       &:hover {
         color: #8EE5FF;
       }
+    }
 }
 
+fieldset {
+  text-align: left;
+  margin-left: 65px;
+}
+
+textarea {
+  -webkit-appearance: textarea;
+  background-color: white;
+  border-image: initial;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  -webkit-box-orient: vertical;
+  resize: auto;
+  cursor: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: 800px;
+}
+
+
+.photos {
+  img {
+    float: left;
+    margin-left: 65px; 
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+  }
 }
 
 /* typography */

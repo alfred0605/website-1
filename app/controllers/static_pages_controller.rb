@@ -14,4 +14,6 @@ class StaticPagesController < ApplicationController
   def photography
   end
 
+  def send_mail
+  end
 end
