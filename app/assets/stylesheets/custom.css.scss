@@ -104,13 +104,22 @@ textarea {
 
 
 .photos {
-  img {
-    float: left;
-    margin-left: 65px; 
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    height: 150px;
+  float: left;
+  margin-left: 65px; 
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 150px;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+  -ms-transition: 0.1s ease-out;
+  &:hover {
+    text-align: center;
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    -ms-transform: scale(2.5);
   }
 }
 
