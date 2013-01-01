@@ -80,16 +80,49 @@ textarea {
       &:hover {
         color: #8EE5FF;
       }
+      h4 {
+        margin-top: -10px;
+        margin-bottom: -20px;
+      }
     }
     a2 {
       margin-right: 0px;
       margin-left: 0px;
-      color: #00591B;
+      color: #0A05A6;
       &:hover {
         color: #8EE5FF;
       }
     }
+    #leases { 
+      font-family: "Myriad Pro", Calibri, sans-serif;
+      width:800px;
+      text-align: left;
+      margin: 5px 45px -20px 85px;
+      font-size: 20px;
+      color: #344D95;
+      font-weight: 100;
+    }
+
+    #leases2 { 
+      font-family: "Myriad Pro", Calibri, sans-serif;
+      width:800px;
+      text-align: left;
+      margin: 5px 45px -20px 85px;
+      font-size: 20px;
+      color: #344D95;
+      font-weight: 100;
+    }
+    #tabnav { 
+      list-style: none;
+      text-align: left;
+    }
 }
+
+.accordion {
+  width: 480px;
+}
+
+#clear { clear: both; margin-bottom: 15px }​
 
 fieldset {
   text-align: left;

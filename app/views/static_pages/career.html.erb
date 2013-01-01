@@ -1,3 +1,45 @@
+  <script type="text/javascript">
+$(document).ready(function(){
+  $("#leases").hide();
+
+    var isMousedOver;
+
+    var hideDropdown = function(a) {
+            setTimeout( function() {
+                if (isMousedOver) return;
+                $("#leases").slideUp("medium");
+                $(a).removeClass("active");
+            }, 500);
+    }
+
+    $(".btn-slide").hover(
+        function(){
+            $("#leases").stop(true,true).slideDown("medium");
+            isMousedOver = true;
+            $(".btn-slide").removeClass("active");
+            $(this).addClass("active");
+            var that = this;
+            $("#leases").data("mouseoutfn", function() { hideDropdown(that) });
+        },
+        function(){
+            isMousedOver = false;
+            hideDropdown(this);
+        }
+    );
+
+    $("#leases").hover(
+        function() {
+            isMousedOver = true;
+        },
+        function() {
+            isMousedOver = false;
+            $(this).data("mouseoutfn")();
+        }
+    );
+
+});
+</script>
+
 <link rel="shortcut icon" href="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/Career_zps6d00c20f.png">
 <title>Career</title>
 <div class="image">
@@ -16,33 +58,45 @@
   <a name="goals"></a>
   <h2>Goals</h2>
   <section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a></section>
-  <h3>I'm <font color="0A05A6">not entirely sure</font> what I want to do as a career yet, as I just started my upper division CS courses last semester. However, I know I want to be a  <font color="0A05A6">software developer</font>.  Also, I think I favor <font color="0A05A6">networks</font> and <font color="0A05A6">web development</font> (making this website was super exciting!) at the moment.  At the same time, my goal as of now is to <font color="0A05A6">explore</font> more subfields of computer science and hopefully find a niche.</h3>
+  <h3>I'm <font color="0A05A6">not entirely sure</font> what I want to do as a career yet, as I just started my upper division CS courses last semester. However, I know I want to do <font color="0A05A6">software development</font>. As of now, I think <font color="0A05A6">networks</font> and <font color="0A05A6">web development</font> are super exciting - making this website during break was the best part of break so far! - and from my internship experience, I realized <font color="0A05A6">QA is not</font> my favorite. My goal currently is to <font color="0A05A6">explore</font> more subfields of computer science and hopefully find a niche.</h3>
   <a name="past"></a>
   <h2>Past Experiences - Internships, Research</h2>
-  <section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a></section>
+  <section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg"/></a></section>
   <h3>Berkeley Institute of Design<c1>UC Berkeley, Fall 2012</c1></h3>
-  <h4><i>Undergraduate researcher for Dr. Nathaniel Titterton:</i><br>
-• Open web-based assignments in Eclipse and allow users (beginner Java learners) to validate<br>
-• <a2 href="https://github.com/IDE4edu/">Github</a2> for this project 
-</h4>
-  <h3>Lockheed Martin Corporation (Space Systems Company)<c1>Sunnyvale, CA, Summer 2012</c1></h3>
-  <h4><i>Satellite Test Developer for Command and Data Handling, Special Programs Intern:</i><br>
-• Modify and improve data-mining and data-collecting software<br>
-• Update telemetry-measuring box test to execute on Visual Studio 2008 instead of 2003<br>
-• Write program to check test completeness for connector pins<br>
-• Develop memory tests for on-board computer<br>
-• Compare net lists to pin lists for newly designed circuit card assemblies<br>
-• All projects done in C++<br>
+
+<a class="btn-slide"><h4><i>Undergraduate research for Dr. Nathaniel Titterton</i></h4></a>
+
+<div id="leases">
+    <div>• Eclipse plug-in development for educational web-based exercises inside an Eclipse interface</div>
+    <div>• <a2 href="https://github.com/IDE4edu/">Github</a2> for this project</div>
+</div>​
+  
+<br>
+
+<h3>Lockheed Martin Corporation (Space Systems Company)<c1>Sunnyvale, CA, Summer 2012</c1></h3>
+
+
+<a class="btn-slide2"><h4><i>Satellite Test Developer</i></h4></a>
+
+<div id="leases2">
+    <div>• Modify and improve data-mining and data-collecting software</div>
+    <div>• Migrate box test code from Visual Studio 2003 to 2008</div>
+    <div>• Write program checking test completeness for connector pins</div>
+    <div>• Develop memory tests for on-board computer</div>
+    <div>• All projects done in C++</div>
+</div>​
+  
+<br>
 
   </h4>
   <h3>EMC Corporation<c1>Santa Clara, CA, Summer 2011</c1></h3>
-  <h4><i>Manufacture Test Development College Intern:</i><br>
-  • Design and implement a more user-friendly interface for test logs using Perl and HTML<br>
+  <h4><i>Manufacture Test Developer:</i><br>
+  • Upgrade interface for test logs using Perl and HTML<br>
   • Add queries to the test-log database with SQL</h4>
   <h3>Delphix Corporation<c1>Menlo Park, CA, Summer 2010</c1></h3>
-  <h4><i>Quality Assurance Summer Intern</i><br>
-    • Wrote test automation script in Python using Project Sikuli<br>
-    • Tested product and reported bugs through Bugzilla</h4>
+  <h4><i>Quality Assurance Intern</i><br>
+    • Write test automation script in Python using Project Sikuli<br>
+    • Test product and report bugs through Bugzilla</h4>
   <h4></h4>
   <br><br>
   <a name="funfact"></a>
