@@ -73,12 +73,14 @@ textarea {
     border-radius: 7px;
     font-family: "Myriad Pro", Calibri, sans-serif;
     font-size: 16px;
+    text-decoration: none;
     a {
       margin-right: 20px;
       margin-left: 20px;
       color: #00475C;
       &:hover {
         color: #8EE5FF;
+        text-decoration: none;
       }
       h4 {
         margin-top: -10px;
@@ -91,19 +93,10 @@ textarea {
       color: #0A05A6;
       &:hover {
         color: #8EE5FF;
+        text-decoration: none;
       }
     }
-    #leases { 
-      font-family: "Myriad Pro", Calibri, sans-serif;
-      width:800px;
-      text-align: left;
-      margin: 5px 45px -20px 85px;
-      font-size: 20px;
-      color: #344D95;
-      font-weight: 100;
-    }
-
-    #leases2 { 
+    #leases, #leases2, #leases3, #leases4 { 
       font-family: "Myriad Pro", Calibri, sans-serif;
       width:800px;
       text-align: left;
@@ -116,10 +109,6 @@ textarea {
       list-style: none;
       text-align: left;
     }
-}
-
-.accordion {
-  width: 480px;
 }
 
 #clear { clear: both; margin-bottom: 15px }​
@@ -227,6 +216,9 @@ h4 {
   margin-bottom: 5px;
   color: #344D95;
   font-weight: 100;
+  &:hover {
+    color: #344D95;
+  }
 }
 
 p {
@@ -263,6 +255,14 @@ h6 {
   margin-left: 45px;
   margin-right: 20px;
   color: #0B5CA2;
+  font-weight: 100;
+}
+
+h7 {
+  font-size: 14px;
+  margin-left: 40px;
+  margin-top: -10px;  
+  color: #344D95;
   font-weight: 100;
 }
 
