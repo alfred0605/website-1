@@ -7,6 +7,7 @@ SampleApp::Application.routes.draw do
   match '/projects', :to => 'static_pages#projects'
   match '/music', :to => 'static_pages#music'
   match '/photography', :to => 'static_pages#photography'
+  match '/career', :to => 'static_pages#career'
 
 # The priority is based upon order of creation:
   # first created -> highest priority.

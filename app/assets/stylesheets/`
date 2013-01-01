@@ -74,17 +74,9 @@ textarea {
     font-family: "Myriad Pro", Calibri, sans-serif;
     font-size: 16px;
     a {
-      margin-right: 20px;
+      margin-right: 0px;
       margin-left: 20px;
       color: #00475C;
-      &:hover {
-        color: #8EE5FF;
-      }
-    }
-    a2 {
-      margin-right: 0px;
-      margin-left: 0px;
-      color: #00591B;
       &:hover {
         color: #8EE5FF;
       }
