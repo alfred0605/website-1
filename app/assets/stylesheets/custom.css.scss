@@ -87,15 +87,6 @@ textarea {
         margin-bottom: -20px;
       }
     }
-    a2 {
-      margin-right: 0px;
-      margin-left: 0px;
-      color: #0A05A6;
-      &:hover {
-        color: #8EE5FF;
-        text-decoration: none;
-      }
-    }
     #leases, #leases2, #leases3, #leases4 { 
       font-family: "Myriad Pro", Calibri, sans-serif;
       width:800px;
@@ -104,6 +95,15 @@ textarea {
       font-size: 20px;
       color: #344D95;
       font-weight: 100;
+      a {
+        margin-right: 0px;
+        margin-left: 0px;
+        color: #0A05A6;
+        &:hover {
+          color: #8EE5FF;
+          text-decoration: none;
+        }
+      }
     }
     #tabnav { 
       list-style: none;
