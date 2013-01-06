@@ -304,30 +304,3 @@ section#gototop {
     margin-top: 1.5px;
   }
 }
-
-/* footer */
-
-footer {
-  margin-top: 25px;
-  padding-top: 5px;
-  border-top: 1px solid #56A5EC;
-  color: #999;
-  a {
-    color: #555;
-    &:hover {
-      color: #222;
-    }
-  }
-  small {
-    float: right;
-    color: #5CB3FF;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
-}

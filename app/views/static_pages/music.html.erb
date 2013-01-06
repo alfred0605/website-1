@@ -1,66 +1,83 @@
 <link rel="shortcut icon" href="http://i54.photobucket.com/albums/g98/andreaowu/music_zps2f678778.png">
 <title>Music</title>
+
 <div class="image">
-  <img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/piano_zps315f075d.jpg" />
-  <div class="box">
-  	<h1><br><b>Music</b></h1>
+    <img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/piano_zps315f075d.jpg" />
+    <div class="box">
+  	   <h1><br><b>Music</b></h1>
+    </div>
+
+    <p>
+        <%= render 'layouts/header' %>
+        <font size = 5px;>&nbsp;</font>
+
+        <div class="textbox"><br>
+            <a href="#piano">Piano</a>
+            <a href="#guitar">Guitar</a>
+            <a href="#repAndPerf">Repertoire and Performances</a>
+            <a href="#funfact">Fun fact</a>
+            <a name="piano"></a>
+
+            <h2>Piano</h2>
+            <section id="gototop">
+              <a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a>
+            </section>
+            <h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have been playing classical piano for <font color="0A05A6">fifteen years</font>, and I really enjoy it!  I am <font color="0A05A6">currently studying</font> piano with Professor Sharon Mann of the San Francisco Conservatory of Music.  My favorite composers are Liszt, Bach, Beethoven, and whoever writes exciting and dramatic music.  If you ask my sister, she says my talent is <font color="0A05A6">breaking piano strings</font>: I have broken 13 piano strings, and funnily enough, I broke all of them in the span of 2-3 years!<br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Besides solo piano, last semester I played in an <font color="0A05A6">ensemble</font> with peers at my school, and they were very talented musicians.<br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piano is really important to me, as I believe it helped shaped my self-motivation, discipline, and the belief that hard work pays off.  I am truly grateful for the opportunity to play this wonderful instrument, as piano <font color="0A05A6">keeps me sane</font></font> in the midst of debugging computer science projects. And life.<br>
+            
+            <a name="guitar"></a>
+            <h2>Guitar</h2>
+            <section id="gototop">
+              <a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a>
+            </section>
+            
+            <h3>Recently, I have started learning guitar, an interest of mine I have long wanted to pursue. I can play all the <font color="0A05A6">major chords</font> and can stumble along in a couple of popular songs.</h3>
+
+            <a name="repAndPerf"></a>
+            <h2>Repertoire and Performances for Piano</h2>
+            <section id="gototop">
+              <a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a>
+            </section>
+            
+            <h3>Current repertoire</h3>
+            <h4>Bach - Prelude and Fugue in f minor, WTC II</h4>
+            <h4>Beethoven - Sonata in E Major, Op. 109</h4>
+            <h4>Liszt - Mephisto Waltz</h4>
+            <h4>Rachmaninoff - Etude Tableaux Op. 33 No. 2</h4>
+            <h4>Rachmaninoff - Etude Tableaux Op. 39 No. 2</h4>
+            <h4>Prokofiev - Sonata No. 1 in f minor for Piano and Violin</h4>
+            
+            <h3>Noon Concert (ensemble): October 2012</h3>
+            <h4>Brahms - Trio in B Major</h4>
+            <h3>Piedmont Gardens Retirement Center: September 2012</h3>
+            <h4>Bach - Italian Concerto</h4>
+            <h4>Beethoven - Sonata in E Major, Op. 109</h4>
+            <h4>Chopin - Etude in C Major, Op. 10 No. 1</h4>
+            <h4>Chopin - Etude in c minor, Op. 25 No. 12</h4>
+            <h4>Copland - Four Piano Blues</h4>
+            <h4>Liszt - La Campanella</h4>
+            
+            <h3>Noon Concert (shared solo): February 2012</h3>
+            <h3><iframe align="left" width="420" height="315" src="http://www.youtube.com/embed/zl8KQgzjIVQ?rel=0" frameborder="0" allowfullscreen></iframe></h3>
+            <br><br><br><br><br>
+            <h5>Schumann - Sonata in g minor</h5><br>
+            <h5>Prokofiev - Toccata, D minor Op. 11</h5><br>
+            <br><br><br><br><br><br>
+            <h3>Noon Concert (solo): October 2011</h3>
+            <h3><iframe align="left" width="420" height="315" src="http://www.youtube.com/embed/LRxUQj_QmII?rel=0" frameborder="0" allowfullscreen></iframe></h3>
+            <br><br><br>
+            <h5>Bach - Chromatic Fantasy and Fugue</h5><br>
+            <h5>Beethoven - Sonata in Eb Major, Op. 31 No. 3</h5><br>
+            <h5>Ginastera - Sonata No. 1 Op. 22</h5><br>
+            <br><br><br><br><br>
+            <br>
+            <a name="funfact"></a>
+            <section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a></section>
+            <h6>Fun fact: At the age of four, I asked my mom whether I could start piano, and she thought I was too<br> young. I had to wait until I was five.</h6><br>
+        </div>
+    </p>
 </div>
-<p>
-<%= render 'layouts/header' %>
-<font size = 5px;>&nbsp;</font>
-<div class="textbox"><br>
-<a href="#piano">Piano</a>
-<a href="#guitar">Guitar</a>
-<a href="#repAndPerf">Repertoire and Performances</a>
-<a href="#funfact">Fun fact</a>
-<a name="piano"></a>
-<h2>Piano</h2>
-<section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a></section>
-<h3>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have been playing classical piano for <font color="0A05A6">fifteen years</font>, and I really enjoy it!  I am <font color="0A05A6">currently studying</font> piano with Professor Sharon Mann of the San Francisco Conservatory of Music.  My favorite composers are Liszt, Bach, Beethoven, and whoever writes exciting and dramatic music.  If you ask my sister, she says my talent is <font color="0A05A6">breaking piano strings</font>: I have broken 13 piano strings, and funnily enough, I broke all of them in the span of 2-3 years!<br>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Besides solo piano, last semester I played in an <font color="0A05A6">ensemble</font> with peers at my school, and they were very talented musicians.<br>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piano is really important to me, as I believe it helped shaped my self-motivation, discipline, and the belief that hard work pays off.  I am truly grateful for the opportunity to play this wonderful instrument, as piano <font color="0A05A6">keeps me sane</font></font> in the midst of debugging computer science projects. And life.<br>
- <a name="guitar"></a>
- <h2>Guitar</h2>
-<section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a></section>
- <h3>Recently, I have started learning guitar, an interest of mine I have long wanted to pursue. I can play all the <font color="0A05A6">major chords</font> and can stumble along in a couple of popular songs.
-</h3>
-<a name="repAndPerf"></a>
-<h2>Repertoire and Performances for Piano</h2>
-<section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a></section>
-<h3>Current repertoire</h3>
-	<h4>Bach - Prelude and Fugue in f minor, WTC II</h4>
-  	<h4>Beethoven - Sonata in E Major, Op. 109</h4>
-  	<h4>Liszt - Mephisto Waltz</h4>
-  	<h4>Rachmaninoff - Etude Tableaux Op. 33 No. 2</h4>
-  	<h4>Rachmaninoff - Etude Tableaux Op. 39 No. 2</h4>
-  	<h4>Prokofiev - Sonata No. 1 in f minor for Piano and Violin</h4>
-<h3>Noon Concert (ensemble): October 2012</h3>
-<h4>Brahms - Trio in B Major</h4>
-<h3>Piedmont Gardens Retirement Center: September 2012</h3>
-<h4>Bach - Italian Concerto</h4>
-<h4>Beethoven - Sonata in E Major, Op. 109</h4>
-<h4>Chopin - Etude in C Major, Op. 10 No. 1</h4>
-<h4>Chopin - Etude in c minor, Op. 25 No. 12</h4>
-<h4>Copland - Four Piano Blues</h4>
-<h4>Liszt - La Campanella</h4>
-<h3>Noon Concert (shared solo): February 2012</h3>
-<h3><iframe align="left" width="420" height="315" src="http://www.youtube.com/embed/zl8KQgzjIVQ?rel=0" frameborder="0" allowfullscreen></iframe></h3>
-<br><br><br><br><br>
-<h5>Schumann - Sonata in g minor</h5><br>
-<h5>Prokofiev - Toccata, D minor Op. 11</h5><br>
-<br><br><br><br><br><br>
-<h3>Noon Concert (solo): October 2011</h3>
-<h3><iframe align="left" width="420" height="315" src="http://www.youtube.com/embed/LRxUQj_QmII?rel=0" frameborder="0" allowfullscreen></iframe></h3>
-<br><br><br>
-<h5>Bach - Chromatic Fantasy and Fugue</h5><br>
-<h5>Beethoven - Sonata in Eb Major, Op. 31 No. 3</h5><br>
-<h5>Ginastera - Sonata No. 1 Op. 22</h5><br>
-<br><br><br><br><br>
 <br>
-<a name="funfact"></a>
-<section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg" /></a></section>
-<h6>Fun fact: At the age of four, I asked my mom whether I could start piano, and she thought I was too<br> young. I had to wait until I was five.</h6><br>
-</div>
