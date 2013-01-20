@@ -3,11 +3,11 @@ $(document).ready(function(integer){
   $("#leases").hide();
     var isMousedOver;
     var hideDropdown = function(a) {
-            setTimeout( function() {
-                if (isMousedOver) return;
-                $("#leases").slideUp("medium");
-                $(a).removeClass("active");
-            }, 500);
+        setTimeout( function() {
+            if (isMousedOver) return;
+            $("#leases").slideUp("medium");
+            $(a).removeClass("active");
+        }, 500);
     }
     $(".btn-slide").hover(
         function(){
