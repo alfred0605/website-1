@@ -1,140 +1,3 @@
-<script type="text/javascript">
-$(document).ready(function(integer){
-    $("#leases").hide();
-    var isMousedOver;
-    var hideDropdown = function(a) {
-        setTimeout( function() {
-            if (isMousedOver) return;
-            $("#leases").slideUp("medium");
-            $(a).removeClass("active");
-        }, 500);
-    }
-    $(".btn-slide").hover(
-        function() {
-            $("#leases").stop(true,true).slideDown("medium");
-            isMousedOver = true;
-            $(".btn-slide").removeClass("active");
-            $(this).addClass("active");
-            var that = this;
-            $("#leases").data("mouseoutfn", function() { hideDropdown(that) });
-        },
-        function() {
-            isMousedOver = false;
-            hideDropdown(this);
-        }
-    );
-    $("#leases").hover(
-        function() {
-            isMousedOver = true;
-        },
-        function() {
-            isMousedOver = false;
-            $(this).data("mouseoutfn")();
-        }
-    );
-
-    $("#leases2").hide();
-    var isMousedOver2;
-    var hideDropdown2 = function(a) {
-            setTimeout( function() {
-                if (isMousedOver2) return;
-                $("#leases2").slideUp("medium");
-                $(a).removeClass("active");
-            }, 500);
-    }
-    $(".btn-slide2").hover(
-        function(){
-            $("#leases2").stop(true,true).slideDown("medium");
-            isMousedOver2 = true;
-            $(".btn-slide2").removeClass("active");
-            $(this).addClass("active");
-            var that = this;
-            $("#leases2").data("mouseoutfn", function() { hideDropdown2(that) });
-        },
-        function(){
-            isMousedOver2 = false;
-            hideDropdown2(this);
-        }
-    );
-    $("#leases2").hover(
-        function() {
-            isMousedOver2 = true;
-        },
-        function() {
-            isMousedOver2 = false;
-            $(this).data("mouseoutfn")();
-        }
-    );
-
-    $("#leases3").hide();
-    var isMousedOver3;
-    var hideDropdown3 = function(a) {
-            setTimeout( function() {
-                if (isMousedOver3) return;
-                $("#leases3").slideUp("medium");
-                $(a).removeClass("active");
-            }, 500);
-    }
-    $(".btn-slide3").hover(
-        function(){
-            $("#leases3").stop(true,true).slideDown("medium");
-            isMousedOver3 = true;
-            $(".btn-slide3").removeClass("active");
-            $(this).addClass("active");
-            var that = this;
-            $("#leases3").data("mouseoutfn", function() { hideDropdown2(that) });
-        },
-        function(){
-            isMousedOver3 = false;
-            hideDropdown3(this);
-        }
-    );
-    $("#leases3").hover(
-        function() {
-            isMousedOver3 = true;
-        },
-        function() {
-            isMousedOver3 = false;
-            $(this).data("mouseoutfn")();
-        }
-    );
-
-    $("#leases4").hide();
-    var isMousedOver4;
-    var hideDropdown4 = function(a) {
-            setTimeout( function() {
-                if (isMousedOver4) return;
-                $("#leases4").slideUp("medium");
-                $(a).removeClass("active");
-            }, 500);
-    }
-    $(".btn-slide4").hover(
-        function(){
-            $("#leases4").stop(true,true).slideDown("medium");
-            isMousedOver3 = true;
-            $(".btn-slide4").removeClass("active");
-            $(this).addClass("active");
-            var that = this;
-            $("#leases4").data("mouseoutfn", function() { hideDropdown2(that) });
-        },
-        function(){
-            isMousedOver4 = false;
-            hideDropdown4(this);
-        }
-    );
-    $("#leases4").hover(
-        function() {
-            isMousedOver4 = true;
-        },
-        function() {
-            isMousedOver4 = false;
-            $(this).data("mouseoutfn")();
-        }
-    );
-
-});
-</script>
-
 <link rel="shortcut icon" href="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/Career_zps6d00c20f.png">
 <title>Career</title>
 <div class="image">
@@ -160,37 +23,45 @@ $(document).ready(function(integer){
   <a name="past"></a>
   <h2>Past Experiences - Internships, Research<h7>*Hover over job title to see projects</h7></h2>
   <section id="gototop"><a href="#top"><img src="http://i54.photobucket.com/albums/g98/andreaowu/Website%20Dev/up_keep_zps4a933c75.jpg"/></a></section>
+  
+  <h3>Adobe Systems Incorporated<c1>San Jose. CA, Summer 2013</c1></h3>
+  <a id="btn-slide"><h4><i>Platform Services Intern</i></h4></a>
+  <div id="leases">
+      <div>• Architecturally design and implement a web service to display Creative Cloud content</div>
+      <div>• Integration with internal identity platforms to develop RESFTful APIs</div>
+  </div>
+  <br>
   <h3>Berkeley Institute of Design<c1>UC Berkeley, Fall 2012 - Spring 2013</c1></h3>
 
-<a class="btn-slide"><h4><i>Undergraduate research for Dr. Nathaniel Titterton</i></h4></a>
+<a id="btn-slide"><h4><i>Undergraduate research for Dr. Nathaniel Titterton</i></h4></a>
 <div id="leases">
     <div>• Develop Eclipse plug-in for integrating web-based exercises into Eclipse IDE</div>
     <div>• <a href="https://github.com/andreaowu" target="_blank"><u>Github</u></a> for this project</div>
-</div>​
+</div>
 <br>
 
 <h3>Lockheed Martin Corporation (Space Systems Company)<c1>Sunnyvale, CA, Summer 2012</c1></h3>
-<a class="btn-slide2"><h4><i>Satellite Test Developer</i></h4></a>
-<div id="leases2">
+<a id="btn-slide"><h4><i>Satellite Test Developer</i></h4></a>
+<div id="leases">
     <div>• Modify and improve data-mining and data-collecting software</div>
     <div>• Migrate box test code from Visual Studio 2003 to 2008</div>
     <div>• Write program checking test completeness for connector pins</div>
     <div>• Develop memory tests for on-board computer</div>
     <div>• All projects done in C++</div>
-</div>​
+</div>
 <br>
 
 <h3>EMC Corporation<c1>Santa Clara, CA, Summer 2011</c1></h3>
-<a class="btn-slide3"><h4><i>Manufacture Test Developer</i></h4></a>
-<div id="leases3">
+<a id="btn-slide"><h4><i>Manufacture Test Developer</i></h4></a>
+<div id="leases">
     <div>• Upgrade interface for test logs using Perl and HTML</div>
     <div>• Add queries to the test-log database with SQL</div>
 </div>
 <br>
 
 <h3>Delphix Corporation<c1>Menlo Park, CA, Summer 2010</c1></h3>
-<a class="btn-slide4"><h4><i>Quality Assurance Intern</i></h4></a>
-<div id="leases4">
+<a id="btn-slide"><h4><i>Quality Assurance Intern</i></h4></a>
+<div id="leases">
     <div>• Write test automation script in Python using Project Sikuli</div>
     <div>• Test product and report bugs through Bugzilla</div>
 </div><br>

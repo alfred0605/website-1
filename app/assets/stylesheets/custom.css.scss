@@ -304,3 +304,11 @@ section#gototop {
     margin-top: 1.5px;
   }
 }
+
+#leases {
+    display: none;
+}
+
+#btn-slide:hover + div {
+    display: block;
+}
